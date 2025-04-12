@@ -34,7 +34,7 @@ const Calculator = () => {
       <div className="digit-buttons">
         {Array(9)
           .fill("")
-          .map((ele, index) => (
+          .map((_ele, index) => (
             <button key={index} onClick={() => handleDigitClick(index + 1)}>
               {index + 1}
             </button>
